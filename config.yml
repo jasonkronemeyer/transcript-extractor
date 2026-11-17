@@ -1,0 +1,17 @@
+model: openai/gpt-4.1
+
+channels:
+  - name: Example Channel
+    channel_id: UCxxxxxxxxxxxxxxxxxxxxxx  # the UC... id, not the @handle
+
+# Ignore a missing transcript after this many hours (captions can lag a new upload)
+transcript_give_up_hours: 48
+
+# Max videos processed per run
+max_videos_per_run: 5
+
+questions:
+  - What are the main claims or arguments made?
+  - Are there any action items or recommendations?
+  - What tools, products, or people are mentioned?
+  - What is uncertain, controversial, or lacks evidence?
